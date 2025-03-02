@@ -1,0 +1,129 @@
+@media (min-width: 375px) and (max-width: 1024px) {
+.header {
+
+   &__block {
+    padding-left: 16px;
+    padding-right: 17px;
+   }
+    &__title {
+          
+        &-text {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-bottom: 24px;
+        }
+    }
+    &__parag {
+        &-text {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        padding-left: 46px;
+
+        &-link {
+            padding: 12px 87px 12px 87px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        
+        }
+    }
+    
+}
+
+.product {
+    display: none;
+}
+
+.minigames {
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+   
+    &__subtitle {
+    
+         color: rgb(32, 32, 39);
+         font-family: Montserrat;
+         font-size: 32px;
+         font-weight: 700;
+         line-height: 39px;
+         letter-spacing: 0px;
+         text-align: left;
+     &-word {
+    
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+  }
+  &__description {
+  padding-top: 16px;
+    &-text {
+        color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+   }
+
+   &__content {
+    padding: 29px 29px 32px 29px;
+  }
+
+   &__box {
+    padding: 29px 29px 32px 29px;
+  }
+
+   &__different {
+    padding: 29px 29px 32px 29px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+ } 
+
+    &__item--alt {
+         display: flex;
+         flex-direction: column;
+         border-radius: 30px;
+
+   }
+  }
+
+  &__button {
+    padding: 16px 110px 16px 110px;
+  }
+ }

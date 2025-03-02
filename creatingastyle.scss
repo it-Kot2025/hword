@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+
+
+.body {
+    font-family: "Montserrat", serif;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+
+
+
+.header {
+    &__block {
+        background-color:rgb(225, 255, 143);
+        padding-top: 196px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 156px;
+ } 
+    
+ &__vector {
+    background-image: url(img__minigames/vector.png);
+    position: relative;
+ }
+
+    &__title {
+
+        &-text {
+        color: rgb(32, 32, 39);
+         font-family: Montserrat;
+         font-size: 64px;
+         font-weight: 700;
+         line-height: 78px;
+         letter-spacing: 0px;
+         text-align: left;
+         display: flex;
+         flex-direction: column;
+    }
+  }
+
+    &__parag {
+        display: flex;
+        flex-direction: column;
+
+      &-text {
+       color: rgb(32, 32, 39);
+       font-family: Montserrat;
+       font-size: 24px;
+       font-weight: 400;
+       line-height: 32px;
+       letter-spacing: 0px;
+       text-align: left;
+     }
+
+     &-word {
+      font-weight: 600;
+      }
+  }
+
+    &__button {
+       padding-top: 24px;
+       text-decoration: none;
+       transition: 0.5s;
+
+       &-link {
+            padding: 16px 65px 16px 65px;
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            border-radius: 30px;
+            background: #000;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #000;
+            transition: 0.5s;
+       }
+        
+        &-link:hover {
+                background: #fff;
+                color: #000;
+                border-radius: 60px;
+            }
+        
+    }
+}
+
+.ticker {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    background-color:rgb(188, 236, 48);
+
+    &__content {
+        display: inline-block;
+        animation: scroll 30s linear infinite;
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 24px;
+
+        &-polosa {
+            padding: 27px 49px 27px 49px;
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+}
+
+.product {
+    background: rgb(32, 32, 39);
+    padding-top: 94px;
+    padding-left: 119px;
+    gap: 32px;
+    &__title {
+     padding-bottom: 40px;
+        &-word {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        }
+    }
+
+    &__parag {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+
+        &-text {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}
+
+.games {
+    display: grid;
+  grid-template-columns: repeat(6, 12fr);
+  column-gap: 32px;
+  
+ .game {
+    display: grid;
+    gap: 32px;
+        &__box {
+            background-color: white;
+            border-radius: 30px;
+
+            &-desc {
+                padding: 32px 32px 36px 32px;
+
+                &-button {
+                    padding: 8px 16px 10px 16px;
+                    border-radius: 52.58px;
+                    background: rgb(247, 247, 247);
+                    border: cadetblue;
+                    color: rgb(32, 32, 39);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 110%;
+                    letter-spacing: 0px;
+                    text-align: left;
+        
+                }
+
+                &-title {
+                    padding-top: 16px;
+                    color: rgb(32, 32, 39);
+                    font-family: Montserrat;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 39px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    
+                }
+
+                &-title {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+        
+           }
+        }
+
+ }
+}
+
+
+.minigames {
+        background: rgb(32, 32, 39);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 144px;
+   
+
+
+
+       &__title {
+            padding-top: 107px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0px;
+            text-align: left;
+
+       }
+
+
+      &__item {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #fff;
+        border-radius: 30px;
+     
+   
+
+       }
+
+      &__content {
+          padding: 48px;
+      }
+
+       &__subtitle { 
+        color: rgb(32, 32, 39);
+         font-family: Montserrat;
+         font-size: 48px;
+         font-weight: 700;
+         line-height: 59px;
+         letter-spacing: 0px;
+         text-align: left;
+         }
+
+        &__different {
+          padding: 48px;
+          margin-right: 57px;
+        }
+
+        &__description {
+            padding-top: 24px;
+        }
+
+        &__description-text {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+         &__button {
+            margin-top: 36px;
+        }
+
+        &__item--alt {
+           display: flex;
+           flex-direction: row;
+
+        } 
+
+        &__box {
+            padding: 48px;
+
+         
+        }
+     
+        &__subtitle { 
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__button {
+           
+            margin-top: 36px;
+            text-decoration: none;
+            transition: 0.5s;
+            border-radius: 60px;
+           
+     
+            &--play {
+                padding: 16px 88px 16px 88px;
+                 display: flex;
+                 justify-content: center;
+                 color: rgb(255, 255, 255);
+                 border-radius: 30px;
+                 background: rgb(32, 32, 39);
+                 font-family: Montserrat;
+                 font-size: 24px;
+                 font-weight: 600;
+                 line-height: 141.69%;
+                 letter-spacing: 0%;
+                 text-align: center;
+                 text-decoration: none;
+                 border: 1px solid #000;
+                 transition: 0.5s;
+            }
+             
+             &--play:hover {
+                     background: #fff;
+                     color: #000;
+                     border-radius: 60px;
+                 }
+             
+         }
+
+
+}
+
+.footer {
+    &__title {
+        padding: 61px 578px 60px 578px;
+        background: rgb(189, 237, 53);
+    }
+}
+
+    @import '_mobil';
+
+
+
